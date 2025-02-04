@@ -27,6 +27,12 @@
     --heading: 2.5rem;
     --body: 1rem;
     --body-small: 0.75rem;
+
+    /* Spacing */
+    --space-100: 8px;
+    --space-125: 10px;
+    --space-300: 24px;
+    --space-500: 40px;
 }
 
 *, *::before, *::after {
@@ -58,10 +64,30 @@ body {
     background: url("../assets/images/illustration-sign-up-mobile.svg");
     height: 284px;
 }
+
+form {
+    margin-block-start: 40px;
+}
   
 img {
     display: block;
     max-width: 100%;
+}
+
+input {
+    margin-block: var(--space-100) var(--space-300);
+}
+
+li:not(:last-child) {
+    margin-block-end: var(--space-125);
+}
+
+main {
+    padding: var(--space-500) var(--space-300);
+}
+
+p {
+    margin-block: var(--space-300);
 }
 
 #success {
