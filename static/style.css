@@ -69,6 +69,10 @@ body {
 form {
     margin-block-start: 40px;
 }
+
+h1, h2 {
+    font-size: var(--heading);
+}
   
 img {
     display: block;
