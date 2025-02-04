@@ -31,6 +31,7 @@
     /* Spacing */
     --space-100: 8px;
     --space-125: 10px;
+    --space-200: 16px;
     --space-300: 24px;
     --space-500: 40px;
 }
@@ -92,4 +93,21 @@ p {
 
 #success {
     display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul > li {
+    display: flex;
+    column-gap: var(--space-200);
+    justify-content: start;
+}
+
+ul > li::before {
+    display: block;
+    content: "";
+    background: url("../assets/images/icon-list.svg") no-repeat;
+    flex: 0 0 21px;
 }
