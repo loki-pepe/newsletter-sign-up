@@ -44,6 +44,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0;
     background-color: var(--pale-navy);
+    color: var(--dark-navy);
 }
 
 .card {
