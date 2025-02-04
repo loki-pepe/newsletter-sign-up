@@ -35,7 +35,9 @@
     --space-125: 10px;
     --space-200: 16px;
     --space-300: 24px;
+    --space-400: 32px;
     --space-500: 40px;
+    --space-1800: 144px;
 }
 
 *, *::before, *::after {
@@ -79,12 +81,30 @@ button:hover, button:focus {
     min-height: 100vh;
 }
 
-.card::before {
+.card#standard::before {
     display: block;
     content: "";
     background: url("../assets/images/illustration-sign-up-mobile.svg") center/cover no-repeat;
     height: 284px;
     border-radius: 0 0 16px 16px;
+}
+
+.card#success {
+    display: none;
+    flex-direction: column;
+    padding: var(--space-1800) var(--space-300) var(--space-500);
+}
+
+.card#success p {
+    flex-grow: 1;
+}
+
+.card#success::before {
+    display: block;
+    content: "";
+    background: url("../assets/images/icon-success.svg") no-repeat;
+    flex: 0 0 64px;
+    margin-block-end: 40px;
 }
 
 form {
@@ -160,10 +180,6 @@ main {
 
 p {
     margin-block: var(--space-300);
-}
-
-#success {
-    display: none;
 }
 
 ul {
