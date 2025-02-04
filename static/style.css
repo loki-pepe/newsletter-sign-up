@@ -81,8 +81,9 @@ button:hover, button:focus {
 .card::before {
     display: block;
     content: "";
-    background: url("../assets/images/illustration-sign-up-mobile.svg");
+    background: url("../assets/images/illustration-sign-up-mobile.svg") center/cover no-repeat;
     height: 284px;
+    border-radius: 0 0 16px 16px;
 }
 
 form {
