@@ -21,6 +21,11 @@
 
     /* Background*/
     --gradient: linear-gradient(hsl(14 100% 61%), hsl(346 100% 66%));
+
+    /* Font sizes */
+    --heading: 2.5rem;
+    --body: 1rem;
+    --body-small: 0.75rem;
 }
 
 *, *::before, *::after {
