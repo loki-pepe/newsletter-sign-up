@@ -18,6 +18,7 @@
     --dark-navy: hsl(234 29% 20%);
     --pale-navy: hsl(234 17% 26%);
     --grey-25pc: hsl(243 28% 13% / 0.25);
+    --white: hsl(0, 0%, 100%);
 
     /* Background*/
     --gradient: linear-gradient(hsl(14 100% 61%), hsl(346 100% 66%));
@@ -42,6 +43,19 @@ body {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
     letter-spacing: 0;
+    background-color: var(--pale-navy);
+}
+
+.card {
+    background-color: var(--white);
+    min-height: 100vh;
+}
+
+.card::before {
+    display: block;
+    content: "";
+    background: url("../assets/images/illustration-sign-up-mobile.svg");
+    height: 284px;
 }
   
 img {
