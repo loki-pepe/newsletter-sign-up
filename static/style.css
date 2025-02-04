@@ -16,6 +16,7 @@
     /* Colors */
     --vermellion: hsl(4 100% 67%);
     --vermellion-shadow: hsl(4 100% 67% / 0.5);
+    --vermellion-input: hsl(4 100% 67% / 0.15);
     --dark-navy: hsl(234 29% 20%);
     --pale-navy: hsl(234 17% 26%);
     --grey-25pc: hsl(243 28% 13% / 0.25);
@@ -123,10 +124,30 @@ input::placeholder {
     opacity: 0.5;
 }
 
+.invalid input {
+    color: var(--vermellion);
+    background-color: var(--vermellion-input);
+    border-color: inherit;
+}
+
+.invalid .error {
+    display: block;
+}
+
 label {
     display: block;
     font-size: var(--body-small);
     font-weight: 700;
+}
+
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+label.error {
+    display: none;
+    color: var(--vermellion);
 }
 
 li:not(:last-child) {
