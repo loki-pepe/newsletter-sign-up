@@ -13,7 +13,7 @@
 
 </head>
 <body>
-  <div class="card">
+  <div class="card" id="main-card">
     <main>
 
       <h1>Stay updated!</h1>
@@ -36,19 +36,19 @@
         <input id="email" name="email" type="text" placeholder="email@company.com">
         <button type="submit">Subscribe to monthly newsletter</button>
       </form>
-  
-      <section id="success">
-        <h2>
-          Thanks for subscribing!
-        </h2>
-        <p>
-          A confirmation email has been sent to <strong id="address"></strong>. 
-          Please open it and click the button inside to confirm your subscription.
-        </p>
-        <button>Dismiss message</button>
-      </section>
-  
+
     </main>
+  </div>
+
+  <div class="card" id="success-card">
+    <h2>
+      Thanks for subscribing!
+    </h2>
+    <p>
+      A confirmation email has been sent to <strong id="address"></strong>. 
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button>Dismiss message</button>
   </div>
 </body>
 </html>
