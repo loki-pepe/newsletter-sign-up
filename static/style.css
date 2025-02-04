@@ -60,6 +60,7 @@ button {
     width: 100%;
     padding: 20px;
     font-family: inherit;
+    font-size: inherit;
     font-weight: 700;
     color: var(--white);
     background-color: var(--dark-navy);
@@ -98,6 +99,7 @@ input {
     width: 100%;
     padding: 20px;
     font-family: inherit;
+    font-size: inherit;
     color: inherit;
 }
 
