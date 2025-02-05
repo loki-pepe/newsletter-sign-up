@@ -37,6 +37,8 @@
     --space-300: 24px;
     --space-400: 32px;
     --space-500: 40px;
+    --space-600: 48px;
+    --space-800: 64px;
     --space-1800: 144px;
     --space-5000: 400px;
 }
@@ -230,6 +232,18 @@ ul > li::before {
         border-radius: var(--space-200);
         background-image: url("../assets/images/illustration-sign-up-desktop.svg");
         flex: 0 1 var(--space-5000);
+    }
+
+    .card#success {
+        padding: var(--space-600) var(--space-800) var(--space-800);
+    }
+
+    .card#success > * {
+        width: 23.5rem;
+    }
+
+    .card#success > p {
+        margin-block: var(--space-300) var(--space-500);
     }
 
     main {
