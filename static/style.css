@@ -26,7 +26,7 @@
     --gradient: linear-gradient(hsl(14 100% 61%), hsl(346 100% 66%));
 
     /* Font sizes */
-    --heading: clamp(2.5rem, 1.5458rem + 4.0712vw, 3.5rem);
+    --heading: clamp(2.5rem, 1.8922rem + 2.5932vw, 3.5rem);
     --body: 1rem;
     --body-small: 0.75rem;
 
@@ -38,6 +38,7 @@
     --space-400: 32px;
     --space-500: 40px;
     --space-1800: 144px;
+    --space-5000: 400px;
 }
 
 *, *::before, *::after {
@@ -79,6 +80,7 @@ button:hover, button:focus {
 .card {
     background-color: var(--white);
     min-height: 100vh;
+    min-width: 320px;
 }
 
 .card#standard::before {
@@ -197,4 +199,45 @@ ul > li::before {
     content: "";
     background: url("../assets/images/icon-list.svg") no-repeat;
     flex: 0 0 21px;
+}
+
+@media (min-width: 48rem) {
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: var(--space-300);
+    }
+
+    .card {
+        min-height: auto;
+        border-radius: 36px;
+    }
+
+    .card#standard {
+        display: flex;
+        flex: 0 1 58rem;
+        min-height: 641px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        padding: var(--space-300);
+        padding-inline-start: 0;
+    }
+
+    .card#standard::before {
+        height: auto;
+        border-radius: var(--space-200);
+        background-image: url("../assets/images/illustration-sign-up-desktop.svg");
+        flex: 0 1 var(--space-5000);
+    }
+
+    main {
+        flex: 0 1 23.5rem;
+        padding: 0;
+        margin-inline: clamp(1.5rem, -7.0714rem + 17.8571vw, 4rem); /* 24px > 64px */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
