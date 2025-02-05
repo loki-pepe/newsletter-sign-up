@@ -14,25 +14,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function handleSubmit(e) {
         e.preventDefault();
-        let email = getEmail(e);
-        if (validateEmail(email)) {
-            logEmail(email);
+
+        if (subscribeForm.checkValidity()) {
+            subscriber.innerHTML = Object.fromEntries(new FormData(e.target)).email
             toggleCards();
         } else {
             showError();
         }
     }
 
-    function getEmail(e) {
-        return Object.fromEntries(new FormData(e.target)).email
-    }
-
     function hideError() {
         subscribeForm.classList.remove('invalid');
-    }
-
-    function logEmail(email) {
-        subscriber.innerHTML = email;
     }
 
     function toggleCards() {
@@ -46,8 +38,4 @@ document.addEventListener('DOMContentLoaded', () => {
         subscribeForm.querySelector('#email').focus();
     }
 
-    function validateEmail(email) {
-       return (email ? true : false);
-    }
-    
 });
