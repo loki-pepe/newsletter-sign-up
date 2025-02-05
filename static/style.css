@@ -80,6 +80,8 @@ button:hover, button:focus {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
     background-color: var(--white);
     min-height: 100vh;
     min-width: 320px;
