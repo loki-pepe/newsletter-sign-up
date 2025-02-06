@@ -40,6 +40,7 @@
     --space-600: 48px;
     --space-800: 64px;
     --space-1800: 144px;
+    --space-4000: 320px;
     --space-5000: 400px;
 }
 
@@ -84,7 +85,7 @@ button:hover, button:focus {
     flex-direction: column;
     background-color: var(--white);
     min-height: 100vh;
-    min-width: 320px;
+    min-width: var(--space-4000);
 }
 
 .card#standard::before {
@@ -109,12 +110,12 @@ button:hover, button:focus {
     display: block;
     content: "";
     background: url("../assets/images/icon-success.svg") no-repeat;
-    flex: 0 0 64px;
-    margin-block-end: 40px;
+    flex: 0 0 var(--space-800);
+    margin-block-end: var(--space-500);
 }
 
 form {
-    margin-block-start: 40px;
+    margin-block-start: var(--space-500);
 }
 
 h1, h2 {
@@ -251,7 +252,7 @@ ul > li::before {
     main {
         flex: 0 1 23.5rem;
         padding: 0;
-        margin-inline: clamp(1.5rem, -7.0714rem + 17.8571vw, 4rem); /* 24px > 64px */
+        margin-inline: clamp(var(--space-300), -7.0714rem + 17.8571vw, var(--space-800));
         display: flex;
         flex-direction: column;
         justify-content: center;
