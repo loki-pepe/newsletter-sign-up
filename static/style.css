@@ -20,7 +20,7 @@
     --dark-navy: hsl(234 29% 20%);
     --pale-navy: hsl(234 17% 26%);
     --grey-25pc: hsl(243 28% 13% / 0.25);
-    --white: hsl(0, 0%, 100%);
+    --white: hsl(0 0% 100%);
 
     /* Background*/
     --gradient: linear-gradient(hsl(14 100% 61%), hsl(346 100% 66%));
